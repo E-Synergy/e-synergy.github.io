@@ -3,7 +3,8 @@ layout: default
 title: CV of Li Yuen
 container: container-wide
 ---
-		
+{% assign edu_page = site.pages | where: "path", "education/Undergrad.md" | first %}
+
 	<div class="cv">
 		<a href="#" class="download" title="Download CV as PDF">Download CV</a>	
 		<br>
@@ -17,18 +18,22 @@ container: container-wide
 		<!-- <span class="obfuscate">hankquilan@gmail.com</span> -->
 		</address>
 		<div class="container-wide">
-		<p style="margin-block: 50px;"><strong>Education</strong><br>
-			<strong>
-				{% for education in site.education %}
-				<a href="{{ education.url }}" style="color: inherit; text-decoration: none;">
-				{{ education.institution }}
-				{% endfor %}
-
-			</strong> (2024 - Present). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Undergraduate studies, BEng Electronics & Electrical Engineering. <em>Year 1 CGPA: 3.80</em> Chapter available at: <a href="{{'/education/Undergrad' | relative_url}}">View University Skills</a>.</span> 
+		<p style="margin-block: 50px;">
+		<strong>Education</strong><br>
+		<strong>
+			<a href="{{ edu_page.url }}" style="color: inherit; text-decoration: none;">
+			{{ edu_page.institution }}
+			</a>
+		</strong> (2024 - Present). 
+			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Undergraduate studies, BEng Electronics & Electrical Engineering. <em>BEEE</em> <br>Details: <a href="{{'/education/Undergrad' | relative_url}}">View University Skills</a>.</span> 
 			<br>
-			<strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span> 			</p>
+		<strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
+			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Junior Middle to Senior Middle in Science Stream. <br>
+			In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span>
+			<br>
+		<strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
+			<span style="font-size: 0.875em; color:#2a2a2a;"><br>of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span>
+		</p>
 
 		<p style="margin-block: 50px;"><strong>Select Publications</strong><br>
 			<strong>Last Name, F.</strong> (204). 

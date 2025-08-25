@@ -1,5 +1,6 @@
 body { 
-    margin: 60px auto; width: 75%; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; line-height: 1.2;
+    margin: 60px auto;
+    width: 75%; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; line-height: 1.2;
 }
 
 .container { /*no width and no margin*/

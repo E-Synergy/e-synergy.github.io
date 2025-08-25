@@ -1,3 +1,19 @@
+.container--education,
+.container--education * {
+  font-family: "Times New Roman", serif !important;
+  font-size: 1rem;
+  color: inherit;
+  /* border: 2px solid red; */
+  /* max-width: 100% !important; background-color: inherit; */
+}
+
+.container--education p,
+.container--education ul,
+.container--education ol {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .download {
   display: inline-block;
   padding: 0 30px;
