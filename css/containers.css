@@ -1,12 +1,13 @@
 .download {
   display: inline-block;
-  padding: 0px 30px 20px 0px;
+  padding: 0 30px;
   margin: 20px;
   /* padding-right: 40px; */
   color: #d2d2d2;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .download:hover {
