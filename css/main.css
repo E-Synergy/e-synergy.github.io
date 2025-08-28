@@ -1,18 +1,20 @@
 body { 
     margin: 60px auto;
-    width: 75%; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; line-height: 1.2;
+    width: 75%;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; line-height: 1.2;
 }
 
-.container { /*no width and no margin*/
-    padding: 20px; width: 90%; max-width: 1200%; margin: 30px auto; padding: 20px; box-sizing: border-box;
+.container {
+    padding: 20px; width: 90%; max-width: 1200px; margin: 30px auto; padding: 20px; box-sizing: border-box;
 }
-.container-wide { max-width: 1000px; background-color: #ffffff; }
-.container-default { max-width: 800px; background-color: #ffffff ; }
-.container-narrow { max-width: 600px; background-color: #ffffff;}
+.container-wide { max-width: 1000px }
+.container-default { max-width: 800px }
+.container-narrow { max-width: 600px }
 .container-code { max-width: 800px; background-color: #bbbbbb; border: 1px solid #ddd; font-family: 'Monaco', 'Courier New', monospace; font-size: 0.9em; overflow-x: auto;}
 @media (min-width: 768px) {
-    .container{ width: 85%; margin: 40px auto; padding: 25px; }
+    .container{ width: 85%; margin: 40px auto; padding: 25px; transform: scale(0.8); transform-origin: top center; }
     .container-code{ font-size: 1em; }
+    .container-narrow { width: 85%; margin: 40px auto; padding: 25px; }
 }
 @media (min-width: 1024px) {
     .container {
@@ -46,4 +48,5 @@ ul.posts li { list-style: none; }
 .cv h2 { font-size: 2em; }
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address, .cv p { font-size: 1.2em; }
-.cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+/* .cv .download {} */
+.cv.email {  overflow-wrap: break-word; word-break: break-word;  }

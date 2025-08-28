@@ -4,23 +4,33 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Hank Quinlan's Blog</title>
- <link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
- <link href="http://hankquinlan.github.io/blog"/>
+ <title>{{ site.title | default: "Your Blog Title" }}</title>
+ <subtitle>{{ site.description | default: "Your blog description" }}</subtitle>
+ <link href="{{ site.url }}{{ site.baseurl }}/blog/atom.xml" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://hankquinlan.github.io/blog</id>
+ <id>{{ site.url }}{{ site.baseurl }}/blog</id>
  <author>
-   <name>Hank Quinlan</name>
-   <email>hankquinlanhub@gmail.com</email>
+   <name>{{ site.author.name | default: "Your Name" }}</name>
+   {% if site.author.email %}
+   <email>{{ site.author.email }}</email>
+   {% endif %}
  </author>
 
- {% for post in site.posts %}
+ {% for post in site.posts limit:20 %}
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://hankquinlan.github.io{{ post.url }}"/>
+   <title>{{ post.title | xml_escape }}</title>
+   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://hankquinlan.github.io/{{ post.id }}</id>
+   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
+   <author>
+      <name>{{ post.author | default: site.author.name | xml_escape }}</name>
+   </author>
+   {% if post.categories %}
+   <category term="{{ post.categories | join: ', ' | xml_escape }}" />
+   {% endif %}
    <content type="html">{{ post.content | xml_escape }}</content>
+   <summary type="html">{{ post.excerpt | strip_html | truncatewords: 50 | xml_escape }}</summary>
  </entry>
  {% endfor %}
  

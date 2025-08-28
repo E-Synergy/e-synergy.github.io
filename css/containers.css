@@ -2,33 +2,39 @@
 .container--education * {
   font-family: "Times New Roman", serif !important;
   font-size: 1rem;
-  color: inherit;
+  color: #2a2a2a;
   /* border: 2px solid red; */
   /* max-width: 100% !important; background-color: inherit; */
 }
-
+.container--education h1 {font-size: 1.40rem;}
+.container--education h2 {font-size: 1.2rem;}
 .container--education p,
 .container--education ul,
+.container--education li,
+.container--education li p,
 .container--education ol {
   text-align: justify;
   hyphens: auto;
+  font-size: 0.85rem;
 }
 
+.container--education li strong { font-size: 1em; }
+
 .download {
-  display: inline-block;
-  padding: 0 30px;
-  margin: 20px;
-  /* padding-right: 40px; */
+  right: 40px;
   color: #d2d2d2;
   text-decoration: none;
+  text-transform: uppercase; 
+  font-size: .8em;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   position: relative;
+  float: right;
 }
 
 .download:hover {
+  color: inherit;
   background-color: inherit;
-  color: #000000;
   text-decoration: none;
 }
 

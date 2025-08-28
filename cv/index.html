@@ -3,54 +3,59 @@ layout: default
 title: CV of Li Yuen
 container: container-wide
 ---
-{% assign edu_page = site.pages | where: "path", "education/Undergrad.md" | first %}
+{% assign cv_page = site.pages | where_exp: "page", "page.path contains 'experience/'" | sort: "path" %}
 
 	<div class="cv">
 		<a href="#" class="download" title="Download CV as PDF">Download CV</a>	
 		<br>
-		<h1>Tay Li Yuen</h1>
-		<address>
+		<div class="container-wide">
+		<h1 style="white-space: nowrap; overflow: auto; font-size: clamp(1.5em, 25vw, 3em);">Tay Li Yuen</h1>
+		<address style="word-wrap: break-word; overflow-wrap: anywhere; white-space: normal;">
 		<strong>Affiliation</strong><br>
 		Sunway University<br>
 		Faculty of Engineering and Technology<br>
 		<abbr title="phone">P:</abbr> (+60) 11-11261733<br>
 		<abbr title="email">E:</abbr> 24015224@imail.sunway.edu.my<br>
-		<!-- <span class="obfuscate">hankquilan@gmail.com</span> -->
 		</address>
+		</div>
+	
 		<div class="container-wide">
 		<p style="margin-block: 50px;">
 		<strong>Education</strong><br>
 		<strong>
-			<a href="{{ edu_page.url }}" style="color: inherit; text-decoration: none;">
-			{{ edu_page.institution }}
-			</a>
+			{{ cv_page[1].institution }}
 		</strong> (2024 - Present). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Undergraduate studies, BEng Electronics & Electrical Engineering. <em>BEEE</em> <br>Details: <a href="{{'/education/Undergrad' | relative_url}}">View University Skills</a>.</span> 
+		<span style="font-size: 0.875em; color:#2a2a2a;"><br>Undergraduate studies, BEng Electronics & Electrical Engineering. <em>BEEE</em> <br>
+			Details: <a href="{{'/experience/Undergrad' | relative_url}}">View University Skills</a>.</span> 
 			<br>
-		<strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Junior Middle to Senior Middle in Science Stream. <br>
-			In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span>
+		<strong>
+			{{ cv_page[0].institution }}
+		</strong> (2017 - 2023). 
+			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Science Stream. <em>UEC, SPM, JUEC</em> <br>
+			Details: <a href="{{'/experience/Highschool' | relative_url}}">View High School</a>.
+		
 			<br>
-		<strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span>
+		<!-- <strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
+			<span style="font-size: 0.875em; color:#2a2a2a;"><br>of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span> -->
 		</p>
+		</div>
 
-		<p style="margin-block: 50px;"><strong>Select Publications</strong><br>
-			<strong>Last Name, F.</strong> (204). 
-			<span style="font-size: 0.875em; color:#2a2a2a;">of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span> 
+		<p style="margin-block: 50px;"><strong>Experience</strong><br>
+			<strong>Pioneer Education</strong> (2024 - Present). <br>
+			<span style="font-size: 0.875em; color:#2a2a2a;">Online tutor teaching English subject to high-school students. Part-time, remote.</span>
 			<br>
-			<strong>Last Name, F.</strong> (204). 
-			<span style="font-size: 0.875em; color:#2a2a2a;">of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span></p>
-		<p style="margin-block: 80px;"><strong>Select Publications</strong><br>
-			<strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</p>
+			<strong>Speed Dial Sdn Bhd</strong> (2024). <br>
+			<span style="font-size: 0.875em; color:#2a2a2a;">Sales advisor for Maxis Products & Services during gap months. Full-time, on-site.</span></p>
+		<!-- <p style="margin-block: 50px;"><strong>Select Publications</strong><br>
+			<strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</p> -->
 
-	<div class="horizontal-scroll-container">
+	<!-- <div class="horizontal-scroll-container">
 		<div class="scrollable-list">
-			<div class="list-item">
+			<div class="list-item"> -->
 				<!-- <h4>Project Management</h4>
 				<img src = " {{ '/assets/PM_01.jpg'|relative_url }}" 
 				alt = " {{ project.title }} " class = "zoom-image"> -->
-			</div>
+			<!-- </div>
 			<div class="list-item">Item 2</div>
 			<div class="list-item">Item 3</div>
 			<div class="list-item">Item 4</div>
@@ -61,10 +66,10 @@ container: container-wide
 			<div class="list-item">Item 9</div>
 			<div class="list-item">Item 10</div>
 		</div>
-	</div>
+	</div> -->
 		<!-- <h2>Select Publications</h2>
 		<p><strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.), <em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>. -->
-		</div>
-	</div>
+		<!-- </div>
+	</div> -->
 
 	

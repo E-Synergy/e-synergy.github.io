@@ -5,4 +5,11 @@ permalink: /blog/:year/:month/:day/:title
 collections:
   education:
     output: true
-    permalink: /education/:path
+    permalink: /experience/:path
+
+title: Your Blog Titles
+url: https://e-synergy.github.io
+baseurl: "/EPM2003" # or "/repository-name" if project site
+author:
+  name: Tay Li Yuen
+  email: your-email@example.com
