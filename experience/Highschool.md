@@ -17,7 +17,7 @@ Asian Parliamentary Debate format & speech constructing trainings.
 化学学会  
 Hands-on practicals on interesting, outside-of-textbook chemical reactions whilst practising scientific methods in real life.  
 2021 - Member  
-2020 - Curriculum Committee 
+2020 - Curriculum Committee  
 2019 - Member 
 
 - **Computer Society**  

@@ -1,8 +1,9 @@
 name: Li Yuen Tay
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title
 
 collections:
   education:
     output: true
-    permalink: /experience/:path/
+    permalink: /experience/:path
+
