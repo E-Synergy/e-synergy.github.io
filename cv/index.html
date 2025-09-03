@@ -3,52 +3,48 @@ layout: default
 title: CV of Li Yuen
 container: container-wide
 ---
-{% assign cv_page = site.pages | where_exp: "page", "page.path contains 'experience/'" | sort: "path" %}
+{% assign cv_page_edu = site.pages | where_exp: "page", "page.path contains 'experience/edu/'" | sort: "period" | reverse %}
+{% assign cv_page_exp = site.pages | where_exp: "page", "page.path contains 'experience/work/'" | sort: "path" %}
 
-	<div class="cv">
-		<a href="#" class="download" title="Download CV as PDF">Download CV</a>	
-		<br>
-		<div class="container-wide">
-		<h1 style="white-space: nowrap; overflow: auto; font-size: clamp(1.5em, 25vw, 3em);">Tay Li Yuen</h1>
-		<address style="word-wrap: break-word; overflow-wrap: anywhere; white-space: normal;">
-		<strong>Affiliation</strong><br>
+<div class="cv">
+	<a href="#" class="download" title="Download CV as PDF">Download CV</a>	
+	<br>
+	<div class="container-wide">
+	<h1 style="white-space: nowrap; overflow: auto; font-size: clamp(1.5em, 25vw, 3em);">
+		Tay Li Yuen</h1>
+	<address style="word-wrap: break-word; overflow-wrap: anywhere; white-space: normal;">
+	<strong>Affiliation</strong><br>
 		Sunway University<br>
 		Faculty of Engineering and Technology<br>
+	</address>
 		<abbr title="phone">P:</abbr> (+60) 11-11261733<br>
 		<abbr title="email">E:</abbr> 24015224@imail.sunway.edu.my<br>
-		</address>
-		</div>
-	
-		<div class="container-wide">
-		<p style="margin-block: 50px;">
-		<strong>Education</strong><br>
-		<strong>
-			{{ cv_page[1].institution }}
-		</strong> (2024 - Present). 
-		<span style="font-size: 0.875em; color:#2a2a2a;"><br>Undergraduate studies, BEng Electronics & Electrical Engineering. <em>BEEE</em> <br>
-			Details: <a href="{{'/experience/Undergrad' | relative_url}}">View University Skills</a>.</span> 
-			<br>
-		<strong>
-			{{ cv_page[0].institution }}
-		</strong> (2017 - 2023). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>Science Stream. <em>UEC, SPM, JUEC</em> <br>
-			Details: <a href="{{'/experience/Highschool' | relative_url}}">View High School</a>.
-		
-			<br>
-		<!-- <strong>Chong Hwa Independent High School, Kuala Lumpur. </strong> (2017 - 2023). 
-			<span style="font-size: 0.875em; color:#2a2a2a;"><br>of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</span> -->
-		</p>
-		</div>
+	</div>
 
-		<p style="margin-block: 50px;"><strong>Experience</strong><br>
-			<strong>Hong Leong Yamaha Motor</strong> (2025). <br>
-			<span style="font-size: 0.875em; color:#2a2a2a;">Information Technology (IT) intern gaining real-world industry experience including access point infrastructure upgrading & setup of company devices. Drafting of documents such as NDAs & quotations based on clients' needs. Temporary, on-site.</span>
-			<br>
-			<strong>Pioneer Education</strong> (2024 - Present). <br>
-			<span style="font-size: 0.875em; color:#2a2a2a;">Online tutor teaching English subject to high-school students. Part-time, remote.</span>
-			<br>
-			<strong>Speed Dial Sdn Bhd</strong> (2024). <br>
-			<span style="font-size: 0.875em; color:#2a2a2a;">Sales advisor specialising in Maxis Products & Services during gap months. Full-time, on-site.</span></p>
+	<div class="container-wide">
+	<p style="margin-block: 50px;">
+	<b>Education</b><br>
+	{% for page in cv_page_edu %}
+	<b>{{ page.institution }}</b> ({{ page.period }}). 
+		<span style="font-size: 0.875em; color:#2a2a2a;"><br>{{ page.description }} <i>{{ page.abbr }}</i> <br>
+		Details:
+  			<a href="{{ page.url | relative_url }}">View {{ page.title }}</a>.<br>
+		</span> 
+	{% endfor %}
+	</p>
+	</div>
+
+	<p style="margin-block: 50px;"><strong>Experience</strong><br>
+		<strong>Hong Leong Yamaha Motor</strong> (2025). <br>
+		<span style="font-size: 0.875em; color:#2a2a2a;">Information Technology (IT) intern. Temporary, on-site. <br \>
+			Details: <a href="{{ 'experience/work/HLYM' | relative_url }}">View Internship</a>.<br>
+		</span>
+
+		<strong>Pioneer Education</strong> (2024 - Present). <br>
+		<span style="font-size: 0.875em; color:#2a2a2a;">Online tutor teaching English subject to high-school students. Part-time, remote.</span>
+		<br>
+		<strong>Speed Dial Sdn Bhd</strong> (2024). <br>
+		<span style="font-size: 0.875em; color:#2a2a2a;">Sales advisor specialising in Maxis Products & Services during gap months. Full-time, on-site.</span></p>
 		<!-- <p style="margin-block: 50px;"><strong>Select Publications</strong><br>
 			<strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</p> -->
 

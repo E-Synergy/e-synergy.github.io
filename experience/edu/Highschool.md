@@ -1,8 +1,12 @@
 ---
-layout: education
+layout: default
 title: "Highschool"
 institution: "Chong Hwa Independent High School Kuala Lumpur"
+period: 2017 - 2023
 container: education
+
+description: "Science Stream."
+abbr: "UEC, SPM, JUEC"
 ---
 
 <h1>Co-Curricular Activities in High School</h1>
