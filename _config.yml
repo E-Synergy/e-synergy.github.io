@@ -6,4 +6,7 @@ collections:
   education:
     output: true
     permalink: /experience/edu/:path
+  experience:
+    output: true
+    permalink: /experience/work/:path
 

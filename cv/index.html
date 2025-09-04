@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CV of Li Yuen
-container: container-wide
+container: def
 ---
 {% assign cv_page_edu = site.pages | where_exp: "page", "page.path contains 'experience/edu/'" | sort: "period" | reverse %}
 {% assign cv_page_exp = site.pages | where_exp: "page", "page.path contains 'experience/work/'" | sort: "path" %}
@@ -19,9 +19,8 @@ container: container-wide
 	</address>
 		<abbr title="phone">P:</abbr> (+60) 11-11261733<br>
 		<abbr title="email">E:</abbr> 24015224@imail.sunway.edu.my<br>
-	</div>
+</div>
 
-	<div class="container-wide">
 	<p style="margin-block: 50px;">
 	<b>Education</b><br>
 	{% for page in cv_page_edu %}
@@ -32,7 +31,7 @@ container: container-wide
 		</span> 
 	{% endfor %}
 	</p>
-	</div>
+
 
 	<p style="margin-block: 50px;"><strong>Experience</strong><br>
 		<strong>Hong Leong Yamaha Motor</strong> (2025 , 1mo ). <br>
@@ -45,30 +44,4 @@ container: container-wide
 		<br>
 		<strong>Speed Dial Sdn Bhd</strong> (2024 , 4mo ). <br>
 		<span style="font-size: 0.875em; color:#2a2a2a;">Sales advisor specialising in Maxis Products & Services during gap months. Full-time, on-site.</span></p>
-		<!-- <p style="margin-block: 50px;"><strong>Select Publications</strong><br>
-			<strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.),<em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.</p> -->
-
-	<!-- <div class="horizontal-scroll-container">
-		<div class="scrollable-list">
-			<div class="list-item"> -->
-				<!-- <h4>Project Management</h4>
-				<img src = " {{ '/assets/PM_01.jpg'|relative_url }}" 
-				alt = " {{ project.title }} " class = "zoom-image"> -->
-			<!-- </div>
-			<div class="list-item">Item 2</div>
-			<div class="list-item">Item 3</div>
-			<div class="list-item">Item 4</div>
-			<div class="list-item">Item 5</div>
-			<div class="list-item">Item 6</div>
-			<div class="list-item">Item 7</div>
-			<div class="list-item">Item 8</div>
-			<div class="list-item">Item 9</div>
-			<div class="list-item">Item 10</div>
-		</div>
-	</div> -->
-		<!-- <h2>Select Publications</h2>
-		<p><strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.), <em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>. -->
-		<!-- </div>
-	</div> -->
-
 	
