@@ -9,6 +9,10 @@ description: "Undergraduate studies, BEng Electronics & Electrical Engineering."
 abbr: BEEE
 ---
 
+<h1>Cumulative Grade Point Average (CGPA)</h1>  
+
+- Year 1: 3.80
+
 <h1>Core subjects/modules covered in institution</h1>
 
 - **Electrical Circuits** <br>
@@ -33,10 +37,6 @@ Translating real world scenarios to computer-friendly language using First-Order
 
 - **Project Management** <br>
 Project frameworking using CDIO concepts to address the lifecycle of an engineering system. Optimisation of critical project parameters using Gantt Charts. Schedule compression via Critical Path Methods (CPM), Earned Value Management, Program Evaluation and Review Technique (PERT) calculations. Six Sigma Methodologies for defect prevention. Refinement of project scope through Work Breakdown Structures (WBS) for decomposing tasks.
-
-<h1>Cumulative Grade Point Average (CGPA)</h1>  
-
-- Year 1: 3.80
 
 <h1>Projects</h1>
 

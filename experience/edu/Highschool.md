@@ -2,7 +2,7 @@
 layout: default
 title: "Highschool"
 institution: "Chong Hwa Independent High School Kuala Lumpur"
-period: 2017 - 2023
+period: 2017 - 2023 , 6yrs
 container: education
 
 description: "Science Stream."
