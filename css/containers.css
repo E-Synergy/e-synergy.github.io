@@ -18,6 +18,8 @@
   /* border: 2px solid red; */
 }
 
+#post.blog .container--education h1 { font-size: 1.50rem; }
+
 .container--education li strong { font-size: 1em; }
 
 .download {
