@@ -3,8 +3,8 @@ layout: default
 title: CV of Li Yuen
 container: def
 ---
-{% assign cv_page_edu = site.pages | where_exp: "page", "page.path contains 'experience/edu/'" | sort: "period" | reverse %}
-{% assign cv_page_exp = site.pages | where_exp: "page", "page.path contains 'experience/work/'" | sort: "path" %}
+{% assign cv_page_edu = site.education | sort: "period" | reverse %}
+{% assign cv_page_exp = site.work | sort: "path" %}
 
 <div class="cv">
 	<a href="#" class="download" title="Download CV as PDF">Download CV</a>	
@@ -18,30 +18,36 @@ container: def
 		Faculty of Engineering and Technology<br>
 	</address>
 		<abbr title="phone">P:</abbr> (+60) 11-11261733<br>
-		<abbr title="email">E:</abbr> 24015224@imail.sunway.edu.my<br>
+		<abbr title="email">E:</abbr> liyuentay1603@gmail.com<br>
 </div>
 
 	<p style="margin-block: 50px;">
 	<b>Education</b><br>
 	{% for page in cv_page_edu %}
 	<b>{{ page.institution }}</b> ({{ page.period }}). 
-		<span style="font-size: 0.875em; color:#2a2a2a;"><br>{{ page.description }} <i>{{ page.abbr }}</i> <br>
+		<span style="font-size: 0.875em; color:#2a2a2a;"><br>{{ page.description }} {{ page.abbr }} <br>
 		Details:
   			<a href="{{ page.url | relative_url }}">View {{ page.title }}</a>.<br>
 		</span> 
 	{% endfor %}
 	</p>
 
-
 	<p style="margin-block: 50px;"><strong>Experience</strong><br>
-		<strong>Hong Leong Yamaha Motor</strong> (2025 , 1mo ). <br>
+		<strong>Hong Leong Yamaha Motor</strong> (2025 , 1mo). <br>
 		<span style="font-size: 0.875em; color:#2a2a2a;">Information Technology (IT) intern. Temporary, on-site. <br \>
 			Details: <a href="{{ 'experience/work/HLYM' | relative_url }}">View Internship</a>.<br>
 		</span>
 
 		<strong>Pioneer Education</strong> (2024 - Present). <br>
-		<span style="font-size: 0.875em; color:#2a2a2a;">Online tutor teaching English subject to high-school students. Part-time, remote.</span>
+		<span style="font-size: 0.875em; color:#2a2a2a;">Highschool level online tutor. Part-time, remote.</span>
 		<br>
-		<strong>Speed Dial Sdn Bhd</strong> (2024 , 4mo ). <br>
-		<span style="font-size: 0.875em; color:#2a2a2a;">Sales advisor specialising in Maxis Products & Services during gap months. Full-time, on-site.</span></p>
+		<strong>Speed Dial Sdn Bhd</strong> (2024 , 4mo). <br>
+		<span style="font-size: 0.875em; color:#2a2a2a;">Sales advisor for Maxis Products & Services. Full-time, on-site.</span>
+	</p>
+
+	<!-- <p style="margin-block: 50px;"><strong>Scholarships</strong><br>
+		<strong>Sunway CIS-ECA Scholarship</strong>. <br>
+		<span style="font-size: 0.875em; color:#2a2a2a;">50% tuition fee waiver throughout undergraduate studies.</span>
+		<br>
+	</p> -->
 	

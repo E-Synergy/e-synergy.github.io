@@ -6,10 +6,6 @@ collections:
   education:
     output: true
     permalink: /experience/edu/:path
-<<<<<<< HEAD
-  experience:
+  work:
     output: true
     permalink: /experience/work/:path
-=======
->>>>>>> 0a59a359bf4db8c8de98e7d6820b4d2cb55eaf57
-

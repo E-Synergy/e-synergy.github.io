@@ -29,14 +29,16 @@ Mainly apprehended knowledge on silicon diodes, application of diodes, biasing c
 Logic circuits system designing using Integrated Circuit (IC) chips. Focused on application scenarios with the use of counters, bistable memory devices i.e. latches, flip flops.
 
 - **Engineering Materials** <br>
-General characteristics, properties of metals & alloys. Analysis of phase diagrams of metals & observation of metal behaviour under applied stress. Choosing of best materials based on different engineering needs.
+General characteristics, properties of metals & alloys. Analysis of phase diagrams of metals & observation of metal behaviour under applied stress. Choosing of metal-based materials based on particular engineering requirements.
 
 - **Introduction to AI** <br>
 Translating real world scenarios to computer-friendly language using First-Order Logic or FOL. Basic knowledge on search algorithms including uninformed search, informed search and game search. Optimisation of decision making through minimax algorithm. Finding approximated solutions to optimisation problems through genetic algorithms. Basic knowledge on Swarm Intelligence including PSO, ACO. Iterative K-Means Clustering for data grouping in conjunction with K-Nearest Neighbouring for Classification & Regresssion in decision-tree machine learning algorithms.
 
-
 - **Project Management** <br>
 Project frameworking using CDIO concepts to address the lifecycle of an engineering system. Optimisation of critical project parameters using Gantt Charts. Schedule compression via Critical Path Methods (CPM), Earned Value Management, Program Evaluation and Review Technique (PERT) calculations. Six Sigma Methodologies for defect prevention. Refinement of project scope through Work Breakdown Structures (WBS) for decomposing tasks.
+
+- **Instrumentation, Measurements & Intro to Controls**  
+Basic measurement protocols and error-handling techniques and mechanisms.
 
 <h1>Projects</h1>
 

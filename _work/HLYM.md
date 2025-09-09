@@ -12,10 +12,10 @@ Working in Information Technology (IT) department has allowed me to explore a fi
 
 <h1>Learnings</h1>
 
-Access point infrastructure upgrading & setup of company devices.  
-Drafting of documents such as NDAs & quotations based on clients' needs.  
-Business management system hierarchies.  
-Business finance jargons e.g. purchasing/sales order, credit/debit notes, invoices, delivery notes...  
-Business-to-Business portal modules for distributors, suppliers, service, training & delivery.  
+Access point infrastructure upgrading & setup of company devices.
+Drafting of documents such as NDAs & quotations based on clients' needs.
+Business management system hierarchies.
+Business finance jargons e.g. purchasing/sales order, credit/debit notes, invoices, delivery notes...
+Business-to-Business portal modules for distributors, suppliers, service, training & delivery. 
 Bridging of database using Application Programming Interfaces (API).  
 

@@ -6,7 +6,7 @@ period: 2017 - 2023 , 6yrs
 container: education
 
 description: "Science Stream."
-abbr: "UEC, SPM, JUEC"
+abbr: "UEC, SPM"
 ---
 
 <h1>Co-Curricular Activities in High School</h1>
